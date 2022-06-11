@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aef2c84318.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,400&display=swap" rel="stylesheet"> 
+    <title>Lucas Roberto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div>
+                <img src="imagens/LR - Logo.jpg" alt="Logo Lucas Roberto">
+            </div>    
+        </div>
+        <ul>
+            <il>
+                <a target="_blank" href="https://github.com/lukedevelopy">GitHub</a>
+            </il>
+            <il>
+                <a target="_blank" href="mailto:luke.developer@outlook.com">Email</a>
+            </il>
+            <il>
+                <a target="_blank" href="https://wa.me/11961116406>">Whatsapp</a>
+            </il>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Lucas Roberto</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p> Meu nome é Lucas Roberto de Francisco. Tenho 30 anos, casado com a mulher perfeita e sensacional chamada Cibele. "Pai" de 4 gatinhos que se chamam: Banguela, Mel, Aurora e Chico. Gosto muito de animes, mangas, jogos, hqs, filmes, pra resumir muito da cultura japonesa e geek. Apaixonado por motos!
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu Contato! :)</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

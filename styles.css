@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style: none;
+    /* font-style: italic; */
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+body {
+    /* background-image: url(./imagens/img1.jpg);
+    background-repeat: none;
+    background-position: center center fixed; */
+    background: url(./imagens/img1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 1px solid #ffffff: ; */
+    box-shadow: 1px 1px 10px 1px #ffffff;
+    /* border-bottom: 15px ridge #ffffff; */
+    margin-bottom: 45px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul il{
+    padding: 4px;
+    /* border-right: 2px dashed #ffffff; */
+    /* background-color: #000000; */
+    /* text-shadow: 0 0 2px #000000; */
+    color: #000;
+    text-shadow: 
+             -1px -1px 0px #000000, 
+             -1px 1px 0px #000000,      
+              1px -1px 0px #000000,    
+              1px 0px 0px #000000;
+    
+
+}
+
+header ul il:first-child {
+    padding: 4px;
+    /* border-left: 2px dashed #ffffff; */
+}
+
+header ul il a {
+    transition: 300;
+}
+
+header ul il a:hover{
+    color:#000000;
+    text-decoration: underline;
+    text-shadow: 
+    -1px -1px 0px #ffffff, 
+    -1px 1px 0px #ffffff,      
+     1px -1px 0px #ffffff,    
+     1px 0px 0px #ffffff;
+}
+
+.flex img {
+    max-width: 100px;
+}
+
+.container {
+    text-align: center;
+    text-shadow: 
+    -1px -1px 0px #000000, 
+    -1px 1px 0px #000000,      
+     1px -1px 0px #000000,    
+     1px 0px 0px #000000;
+}
+
+.container .name h1{
+    font-size: 45px;
+    text-shadow: 
+    -1px -1px 0px #000000, 
+    -1px 1px 0px #000000,      
+     1px -1px 0px #000000,    
+     1px 0px 0px #000000;
+}
+.container .name h5{
+    font-size: 20px;
+    text-shadow: 
+    -1px -1px 0px #000000, 
+    -1px 1px 0px #000000,      
+     1px -1px 0px #000000,    
+     1px 0px 0px #000000;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    /* animation: blink 1s steps(5, start) infinite; */
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+    
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important; 
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+button {
+    color: #000000;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    /* border: thick double #ffffff;
+    padding: 25px; */
+    margin-top: 30px;
+}
+
+.form input {
+    width: 50%;
+    color:#000000;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    
+}
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #000000 50%, #FfF 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #000000;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -2px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+    
+}
